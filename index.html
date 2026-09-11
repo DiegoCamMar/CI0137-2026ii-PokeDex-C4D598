@@ -6,14 +6,17 @@
     <title>Pokédex - Lista de Pokémon</title>
   </head>
   <body>
+    <img src="assets/logo-pokedex.svg" alt="Pokédex Logo">
     <header>
       <p>Pokédex</p>
       <nav>
         <!-- enlaces: Pokédex, Perfil de entrenador, Acerca de, Configuración -->
-         <a href="index.html">Pokédex</a> <!-- en eventual CSS, poner espacios entre estos hrefs -->
-         <a href="perfil.html">Perfil de entrenador</a>
-         <a href="acerca.html">Acerca de</a>
-         <a href="configuracion.html">Configuración</a>
+        <ul> <!-- lista no ordenada (bullet points) -->
+          <li><a href="index.html">Pokédex</a></li>
+          <li><a href="perfil.html">Perfil Entrenador</a></li>
+          <li><a href="acerca.html" target="_blank">Acerca de</a></li> <!-- target abre nueva pestaña -->
+          <li><a href="configuracion.html">Configuración</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -22,6 +25,7 @@
 
       <section id="buscador">
         <h2>Buscar y filtrar</h2>
+        <p>Buscá por nombre o filtrá por tipo para encontrar un Pokémon más rápido</p>
         <!-- controles de búsqueda: nombre, tipo, orden, botón -->
          <input type="text" placeholder="Buscar por nombre">
          <select>
@@ -39,17 +43,17 @@
 
       <section id="lista-pokemon">
         <h2>Pokémon disponibles</h2>
-        <ul> <!-- lista no ordenada (bullet points) -->
-          <li>#001 Bulbasaur</li>
-          <li>#002 Ivysaur</li>
-          <li>#003 Venusaur</li>
-          <li>#004 Chamander</li>
-          <li>#005 Charmeleon</li>
-          <li>#006 Charizard</li>
-          <li>#007 Squirtle</li>
-          <li>#008 Wartortle</li>
-          <li>#009 Baltoise</li>
-          <li>#025 Pikachu</li>
+        <ul>
+          <li><a href="detallePokemonBulbasaur.html">#001 Bulbasaur</a></li>
+          <li><a href="detallePokemonIvysaur.html">#002 Ivysaur</a></li>
+          <li><a href="detallePokemonVenusaur.html">#003 Venusaur</a></li>
+          <li><a href="detallePokemonChamander.html">#004 Chamander</a></li>
+          <li><a href="detallePokemonCharmeleon.html">#005 Charmeleon</a></li>
+          <li><a href="detallePokemonCharizard.html">#006 Charizard</a></li>
+          <li><a href="detallePokemonSquirtle.html">#007 Squirtle</a></li>
+          <li><a href="detallePokemonWartortle.html">#008 Wartortle</a></li>
+          <li><a href="detallePokemonBaltoise.html">#009 Baltoise</a></li>
+          <li><a href="detallePokemonPikachu.html">#025 Pikachu</a></li>
         </ul>
       </section>
 
