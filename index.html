@@ -10,6 +10,10 @@
       <p>Pokédex</p>
       <nav>
         <!-- enlaces: Pokédex, Perfil de entrenador, Acerca de, Configuración -->
+         <a href="index.html">Pokédex</a> <!-- en eventual CSS, poner espacios entre estos hrefs -->
+         <a href="perfil.html">Perfil de entrenador</a>
+         <a href="acerca.html">Acerca de</a>
+         <a href="configuracion.html">Configuración</a>
       </nav>
     </header>
 
@@ -19,17 +23,43 @@
       <section id="buscador">
         <h2>Buscar y filtrar</h2>
         <!-- controles de búsqueda: nombre, tipo, orden, botón -->
+         <input type="text" placeholder="Buscar por nombre">
+         <select>
+           <option value="">Todos los tipos</option>
+           <option value="agua">Agua</option>
+           <option value="fuego">Fuego</option>
+           <option value="planta">Planta</option>
+         </select>
+         <select>
+           <option value="ascendente">Ascendente</option>
+           <option value="descendente">Descendente</option>
+         </select>
+         <button>Buscar</button>
       </section>
 
       <section id="lista-pokemon">
         <h2>Pokémon disponibles</h2>
-        <div>
-          <!-- una tarjeta: imagen, número, nombre, enlace al detalle -->
-        </div>
+        <ul> <!-- lista no ordenada (bullet points) -->
+          <li>#001 Bulbasaur</li>
+          <li>#002 Ivysaur</li>
+          <li>#003 Venusaur</li>
+          <li>#004 Chamander</li>
+          <li>#005 Charmeleon</li>
+          <li>#006 Charizard</li>
+          <li>#007 Squirtle</li>
+          <li>#008 Wartortle</li>
+          <li>#009 Baltoise</li>
+          <li>#025 Pikachu</li>
+        </ul>
       </section>
 
       <nav id="paginacion">
         <!-- enlaces a las páginas de resultados -->
+         <ol> <!-- lista ordenada (numerada) -->
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+         </ol>
       </nav>
     </main>
 
