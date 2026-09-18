@@ -7,16 +7,21 @@
     <link rel="icon" type="image/svg+xml" href="assets/pokeball.svg"> <!-- gana el que esté primero en el orden -->
     <link rel="icon" type="image/png" href="assets/pokeball.png">
   </head>
+
   <body>
     <header>
-      <p>Pokédex</p>
-      <img src="assets/logo-pokedex.svg" alt="Pokédex Logo">
+      <p>
+        <a class="logo" href="./">
+          <img src="assets/logo-pokedex.svg" alt="Pokédex" width="156" height="40">
+        </a>
+      </p>
+
       <nav>
-        <!-- enlaces: Pokédex, Perfil de entrenador, Acerca de, Configuración -->
-        <ul> <!-- lista no ordenada (bullet points) -->
-          <li><a href="index.html">Pokédex</a></li>
-          <li><a href="perfil.html">Perfil Entrenador</a></li>
-          <li><a href="acerca.html" target="_blank">Acerca de</a></li> <!-- target abre nueva pestaña -->
+        <!-- Enlaces de navegación principal del sitio -->
+        <ul>
+          <li><a href="./" accesskey="p">Pokédex</a></li>
+          <li><a href="perfil-entrenador.html">Perfil de entrenador</a></li>
+          <li><a href="acerca-de.html">Acerca de</a></li>
           <li><a href="configuracion.html">Configuración</a></li>
         </ul>
       </nav>
@@ -27,59 +32,125 @@
 
       <section id="buscador">
         <h2>Buscar y filtrar</h2>
-        <p>Buscá por nombre o filtrá por tipo para encontrar un Pokémon más rápido</p>
-        <!-- controles de búsqueda: nombre, tipo, orden, botón -->
-         <input type="text" placeholder="Buscar por nombre">
-         <select>
-           <option value="">Todos los tipos</option>
-           <option value="agua">Agua</option>
-           <option value="fuego">Fuego</option>
-           <option value="planta">Planta</option>
-         </select>
-         <select>
-           <option value="ascendente">Ascendente</option>
-           <option value="descendente">Descendente</option>
-         </select>
-         <button>Buscar</button>
+        <p>Buscá por nombre o filtrá por tipo para encontrar un Pokémon más rápido.</p>
+        <!-- Aqui va el formulario -->
+        </search>
       </section>
 
       <section id="lista-pokemon">
         <h2>Pokémon disponibles</h2>
+
+        <!-- Lista no ordenada: cada tarjeta es un enlace con una imagen (con su alt) y el nombre del Pokémon -->
         <ul>
-          <li><a href="detallePokemonBulbasaur.html">#001 Bulbasaur</a></li>
-          <li><a href="detallePokemonIvysaur.html">#002 Ivysaur</a></li>
-          <li><a href="detallePokemonVenusaur.html">#003 Venusaur</a></li>
-          <li><a href="detallePokemonChamander.html">#004 Chamander</a></li>
-          <li><a href="detallePokemonCharmeleon.html">#005 Charmeleon</a></li>
-          <li><a href="detallePokemonCharizard.html">#006 Charizard</a></li>
-          <li><a href="detallePokemonSquirtle.html">#007 Squirtle</a></li>
-          <li><a href="detallePokemonWartortle.html">#008 Wartortle</a></li>
-          <li><a href="detallePokemonBaltoise.html">#009 Baltoise</a></li>
-          <li><a href="detallePokemonPikachu.html">#025 Pikachu</a></li>
+          <li>
+            <a href="detalle-pokemon-bulbasaur.html">
+              <img src="assets/bulbasaur.png" alt="Bulbasaur" width="96" height="96">
+              <span>#001</span>
+              <span>Bulbasaur</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="detalle-pokemon-ivysaur.html">
+              <img src="assets/ivysaur.png" alt="Ivysaur" width="96" height="96">
+              <span>#002</span>
+              <span>Ivysaur</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="detalle-pokemon-venusaur.html">
+              <img src="assets/venusaur.png" alt="Venusaur" width="96" height="96">
+              <span>#003</span>
+              <span>Venusaur</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="detalle-pokemon-charmander.html">
+              <img src="assets/charmander.png" alt="Charmander" width="96" height="96">
+              <span>#004</span>
+              <span>Charmander</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="detalle-pokemon-charmeleon.html">
+              <img src="assets/charmeleon.png" alt="Charmeleon" width="96" height="96">
+              <span>#005</span>
+              <span>Charmeleon</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="detalle-pokemon-charizard.html">
+              <img src="assets/charizard.png" alt="Charizard" width="96" height="96">
+              <span>#006</span>
+              <span>Charizard</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="detalle-pokemon-squirtle.html">
+              <img src="assets/squirtle.png" alt="Squirtle" width="96" height="96">
+              <span>#007</span>
+              <span>Squirtle</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="detalle-pokemon-wartortle.html">
+              <img src="assets/wartortle.png" alt="Wartortle" width="96" height="96">
+              <span>#008</span>
+              <span>Wartortle</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="detalle-pokemon-blastoise.html">
+              <img src="assets/blastoise.png" alt="Blastoise" width="96" height="96">
+              <span>#009</span>
+              <span>Blastoise</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="detalle-pokemon-pikachu.html">
+              <img src="assets/pikachu.png" alt="Pikachu" width="96" height="96">
+              <span>#025</span>
+              <span>Pikachu</span>
+            </a>
+          </li>
         </ul>
       </section>
 
       <nav id="paginacion">
-        <!-- enlaces a las páginas de resultados -->
-         <ol> <!-- lista ordenada (numerada) -->
-          <li><a href="#">1</a></li>
+        <!-- Lista ordenada: a diferencia de la de arriba, aquí el orden sí importa -->
+        <ol>
+          <li><a href="./">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
-         </ol>
+        </ol>
       </nav>
     </main>
 
     <footer>
-      <!-- créditos -->
-       <p>
-            <small>
-                Proyecto académico del curso de Desarrollo de Aplicaciones Web 
-                (<abbr title="Curso de Desarrollo de Aplicaciones Web">CI-0137</abbr>),
-                de la Escuela de Ciencias de la Computación de Informática.
-                <abbr title="Universidad de Costa Rica">UCR</abbr>
-                <time datetime="2026"></time>
-            </small>
-       </p>
+      <!-- Elementos de texto con semántica especial: <abbr> marca una sigla junto a su expansión (title) y <time> da una fecha en formato legible por máquina (datetime) -->
+      <p><small>Proyecto académico del curso Desarrollo de Aplicaciones Web
+          (<abbr title="Curso de Informática 0137">CI-0137</abbr>),
+          Escuela de Ciencias de la Computación e Informática,
+          <abbr title="Universidad de Costa Rica">UCR</abbr>.
+          <time datetime="2026">2026</time>.</small></p>
+
+      <p><small>Pokémon y sus personajes son marcas registradas de Nintendo,
+          Game Freak y The Pokémon Company. Este sitio no tiene ninguna relación con
+          ellos y se usa únicamente con fines educativos.</small></p>
+
+      <!-- Enlaces externos: target="_blank" abre en pestaña nueva y rel="noopener" evita que esa pestaña controle esta página -->
+      <p><small>Ilustraciones y sprites tomados del repositorio
+          <a href="https://github.com/PokeAPI/sprites" target="_blank" rel="noopener">PokeAPI/sprites</a>.
+          Datos de referencia consultados en
+          <a href="https://pokemondb.net/" target="_blank" rel="noopener">Pokémon Database</a>.</small></p>
     </footer>
   </body>
 </html>
