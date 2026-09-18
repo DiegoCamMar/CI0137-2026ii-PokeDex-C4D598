@@ -3,7 +3,15 @@ body {
     background-color: hsl(348 50% 47%)
     color: #F2F6FA;
 
-    .buscador {
+    border-style: solid;
+    font-size: inherit; 
 
+    .pokemon-card {
+        width: 300px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        padding: 20px /* 8px 16px 6px 8px; */
+        /* margin: 8px; */
     }
+    /* usar asterisco para ponerselo a todos los elementos (mala práctica) */
 }
